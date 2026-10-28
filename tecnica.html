@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SPARKY LEARN - Herramientas de Estudio</title>
+  <link rel="stylesheet" href="tecnica.css">
+  <!-- Carga de GoJS para el Mapa Mental -->
+  <script src="https://unpkg.com/gojs/release/go.js"></script>
+</head>
+<body>
+
+  <!-- ENCABEZADO -->
+  <header>
+    <div class="encabezado">
+      <img src="logo.png" alt="logo" class="img-logo">
+      <img src="SPARKY-LEARN.jpg" alt="SPARKY LEARN" class="img-titulo">
+    </div>
+    
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="Nosotros.html">Nosotros</a></li>
+        <li class="submenu">
+          <a href="Servicios.html">Servicios</a>
+          <ul>
+            <li><a href="Servicios.html#asesorias">Asesorías</a></li>
+            <li><a href="Servicios.html#cursos">Cursos</a></li>
+       
+          </ul>
+        </li>
+        <li><a href="Solucion.html">Solución Tecnológica</a></li>
+        <li><a href="Evidencias.html">Evidencias</a></li>
+        <li><a href="Contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+
+    <section id="hero">
+      <h1>¡Potencia tu Estudio!</h1>
+      <h2>Organiza tus horarios, tareas y utiliza nuestras herramientas mágicas de aprendizaje.</h2>
+    </section>
+  </header>
+
+  <!-- CONTENEDOR PRINCIPAL -->
+  <div class="contenedor-principal">
+
+    <!-- 1. MENSAJE MOTIVACIONAL -->
+    <section class="bloque-feature">
+      <div class="contenido-interno">
+        <div class="feature-info" style="width: 100%; text-align: center;">
+          <span class="subtitulo-tag">INSPIRACIÓN DIARIA</span>
+          <h2 id="mensaje-motivacional">"El aprendizaje es la única cosa que la mente nunca se cansa, nunca se asusta y nunca lamenta."</h2>
+          <p style="font-style: italic; font-weight: bold; margin-top: 10px;">— Leonardo da Vinci</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. REGISTRO RÁPIDO DE USUARIO -->
+    <section class="banner-destacado">
+      <div class="contenido-interno banner-contenido">
+        <div class="banner-texto" style="width: 100%;">
+          <h3>Perfil del Estudiante</h3>
+          <p>Ingresa tu nombre para personalizar tu sesión de estudio.</p>
+          <div class="form-perfil">
+            <input type="text" id="nombre-usuario" placeholder="Escribe tu nombre aquí...">
+            <button id="btn-guardar-nombre" class="btn-sparky">Guardar</button>
+          </div>
+          <p id="saludo-usuario" class="saludo-personalizado"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. HORARIO DE LUNES A VIERNES (6 HORAS) -->
+    <section class="bloque-feature">
+      <div class="contenido-interno">
+        <div class="feature-info" style="width: 100%;">
+          <span class="subtitulo-tag">ORGANIZACIÓN</span>
+          <h2>Horario Semanal de Clases / Estudio</h2>
+          <div class="tabla-horario-wrapper">
+            <table class="tabla-horario">
+              <thead>
+                <tr>
+                  <th>Hora</th>
+                  <th>Lunes</th>
+                  <th>Martes</th>
+                  <th>Miércoles</th>
+                  <th>Jueves</th>
+                  <th>Viernes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Hora 1</strong></td>
+                  <td><textarea placeholder="Materia/Actividad"></textarea></td>
+                  <td><textarea placeholder="Materia/Actividad"></textarea></td>
+                  <td><textarea placeholder="Materia/Actividad"></textarea></td>
+                  <td><textarea placeholder="Materia/Actividad"></textarea></td>
+                  <td><textarea placeholder="Materia/Actividad"></textarea></td>
+                </tr>
+                <tr>
+                  <td><strong>Hora 2</strong></td>
+                  <td><textarea placeholder="Materia/Actividad"></textarea></td>
+                  <td><textarea placeholder="Materia/Actividad"></textarea></td>
+                  <td><textarea placeholder="Materia/Actividad"></textarea></td>
+                  <td><textarea placeholder="Materia/Actividad"></textarea></td>
+                  <td><textarea placeholder="Materia/Actividad"></textarea></td>
+                </tr>
+                <tr>
+                  <td><strong>Hora 3</strong></td>
+                  <td><textarea placeholder="Materia/Actividad"></textarea></td>
+                  <td><textarea placeholder="Materia/Actividad"></textarea></td>
+                  <td><textarea placeholder="Materia/Actividad"></textarea></td>
+                  <td><textarea placeholder="Materia/Actividad"></textarea></td>
+                  <td><textarea placeholder="Materia/Actividad"></textarea></td>
+                </tr>
+                <tr>
+                  <td><strong>Hora 4</strong></td>
+                  <td><textarea placeholder="Materia/Actividad"></textarea></td>
+                  <td><textarea placeholder="Materia/Actividad"></textarea></td>
+                  <td><textarea placeholder="Materia/Actividad"></textarea></td>
+                  <td><textarea placeholder="Materia/Actividad"></textarea></td>
+                  <td><textarea placeholder="Materia/Actividad"></textarea></td>
+                </tr>
+                <tr>
+                  <td><strong>Hora 5</strong></td>
+                  <td><textarea placeholder="Materia/Actividad"></textarea></td>
+                  <td><textarea placeholder="Materia/Actividad"></textarea></td>
+                  <td><textarea placeholder="Materia/Actividad"></textarea></td>
+                  <td><textarea placeholder="Materia/Actividad"></textarea></td>
+                  <td><textarea placeholder="Materia/Actividad"></textarea></td>
+                </tr>
+                <tr>
+                  <td><strong>Hora 6</strong></td>
+                  <td><textarea placeholder="Materia/Actividad"></textarea></td>
+                  <td><textarea placeholder="Materia/Actividad"></textarea></td>
+                  <td><textarea placeholder="Materia/Actividad"></textarea></td>
+                  <td><textarea placeholder="Materia/Actividad"></textarea></td>
+                  <td><textarea placeholder="Materia/Actividad"></textarea></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. LISTA DE DEBERES -->
+    <section class="bloque-feature inverso">
+      <div class="contenido-interno">
+        <div class="feature-info" style="width: 100%;">
+          <span class="subtitulo-tag">PENDIENTES</span>
+          <h2>Lista de Deberes y Tareas</h2>
+          <div class="deberes-control">
+            <input type="text" id="input-tarea" placeholder="Ingresa un nuevo deber o tarea...">
+            <button id="btn-agregar-tarea" class="btn-sparky">Agregar Tarea</button>
+          </div>
+          <ul id="lista-tareas" class="lista-tareas">
+            <!-- Las tareas se generarán dinámicamente -->
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. SECCIÓN PRINCIPAL: HERRAMIENTAS DE ESTUDIO -->
+    <section class="seccion-mecanicas">
+      <div class="contenido-interno">
+        <div class="encabezado-mecanicas">
+          <span class="subtitulo-tag">HERRAMIENTAS DE APRENDIZAJES</span>
+          <h2>Centro de Estudio Interactivo</h2>
+          <p>Selecciona una herramienta técnica para maximizar tu retención y rendimiento.</p>
+        </div>
+
+        <div class="panel-herramientas">
+          <div class="control-tema">
+            <label for="input-tema"><strong>Tema de Estudio:</strong></label>
+            <input type="text" id="input-tema" placeholder="Ej: Historia Universal, Física Cuántica...">
+          </div>
+
+          <div class="control-desplegable">
+            <label for="select-herramienta"><strong>Selecciona la Herramienta:</strong></label>
+            <select id="select-herramienta">
+              <option value="">-- Selecciona una Opción --</option>
+              <option value="subrayado">1. Técnico de Subrayado Mágico</option>
+              <option value="flashcards">2. Tarjetas de Memoria (Flashcards)</option>
+              <option value="mapamental">3. Mapa Mental Interactivo</option>
+              <option value="pomodoro">4. Temporizador Pomodoro</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- CONTENEDOR DESPLEGABLE DINÁMICO DE HERRAMIENTAS -->
+        <div id="contenedor-herramienta" class="contenedor-herramienta oculto">
+
+          <!-- H1: SUBRAYADO -->
+          <div id="herramienta-subrayado" class="sub-herramienta oculto">
+            <h3>Módulo de Subrayado Inteligente</h3>
+            <p><strong>Tema actual:</strong> <span class="tema-activo">General</span></p>
+            
+            <div class="paleta-resaltadores">
+              <span>Color del Marcador:</span>
+              <button class="btn-color activo" data-color="#ffeb3b" style="background-color: #ffeb3b;" title="Amarillo: Ideas Clave"></button>
+              <button class="btn-color" data-color="#ff9800" style="background-color: #ff9800;" title="Naranja: Fechas / Datos"></button>
+              <button class="btn-color" data-color="#4caf50" style="background-color: #4caf50;" title="Verde: Conceptos"></button>
+              <button class="btn-color" data-color="#00bcd4" style="background-color: #00bcd4;" title="Azul: Ejemplos"></button>
+            </div>
+
+            <div class="subrayado-acciones">
+              <button id="btn-subrayar" class="btn-sparky">Subrayar Selección</button>
+              <button id="btn-borrar-subrayado" class="btn-sparky btn-danger">Borrar Subrayado Selección</button>
+            </div>
+
+            <div id="editor-texto" contenteditable="true" class="box-editor" placeholder="Pega o escribe tu texto aquí para practicar el subrayado..."></div>
+
+            <div class="explicacion-academica">
+              <h4>¿Cómo funciona y para qué sirve?</h4>
+              <p>El **subrayado por colores** fomenta la lectura activa y la jerarquización de ideas. Asociar conceptos principales con colores específicos permite una revisión visual ultra rápida antes de tus exámenes, mejorando la comprensión lectora.</p>
+            </div>
+          </div>
+
+          <!-- H2: FLASHCARDS -->
+          <div id="herramienta-flashcards" class="sub-herramienta oculto">
+            <h3>Tarjetas de Memoria (Flashcards)</h3>
+            <p><strong>Tema actual:</strong> <span class="tema-activo">General</span></p>
+
+            <div class="form-flashcard">
+              <input type="text" id="fc-pregunta" placeholder="Escribe la pregunta o concepto...">
+              <input type="text" id="fc-respuesta" placeholder="Escribe la respuesta...">
+              <button id="btn-crear-card" class="btn-sparky">Guardar Flashcard</button>
+            </div>
+
+            <div class="grid-flashcards" id="grid-flashcards">
+              <!-- Las tarjetas se cargarán aquí -->
+            </div>
+
+            <div class="explicacion-academica">
+              <h4>¿Cómo funciona y para qué sirve?</h4>
+              <p>Las **Flashcards** aprovechan la *recuperación activa* (Active Recall) e *intercalación*. Te obligan a esforzar la memoria para recuperar la respuesta desde cero antes de verla, consolidando las conexiones neuronales a largo plazo.</p>
+            </div>
+          </div>
+
+          <!-- H3: MAPA MENTAL -->
+          <div id="herramienta-mapamental" class="sub-herramienta oculto">
+            <h3>Generador de Mapa Mental Visual</h3>
+            <p><strong>Tema actual:</strong> <span class="tema-activo">General</span></p>
+
+            <div class="controles-mapa">
+              <input type="text" id="nodo-texto" placeholder="Nombre de la idea o concepto...">
+              <select id="nodo-padre">
+                <option value="0">Nodo Raíz (Tema Principal)</option>
+              </select>
+              <button id="btn-agregar-nodo" class="btn-sparky">Agregar Nodo</button>
+            </div>
+
+            <div id="gojs-diagrama" class="diagrama-box"></div>
+
+            <div class="explicacion-academica">
+              <h4>¿Cómo funciona y para qué sirve?</h4>
+              <p>El **Mapa Mental** es un organizador gráfico que conecta un concepto central con ideas secundarias. Estimula el pensamiento radiante y la capacidad sintética, facilitando el procesamiento del contenido mediante patrones visuales.</p>
+            </div>
+          </div>
+
+          <!-- H4: POMODORO -->
+          <div id="herramienta-pomodoro" class="sub-herramienta oculto">
+            <h3>Técnica Pomodoro de Enfoque</h3>
+            <p><strong>Tema actual:</strong> <span class="tema-activo">General</span></p>
+
+            <div class="pomodoro-box">
+              <div class="pomodoro-timer" id="pomo-display">25:00</div>
+              <div class="pomodoro-controles">
+                <button id="btn-pomo-start" class="btn-sparky">Iniciar</button>
+                <button id="btn-pomo-pause" class="btn-sparky">Pausar</button>
+                <button id="btn-pomo-reset" class="btn-sparky btn-danger">Reiniciar</button>
+              </div>
+              <textarea id="pomo-notas" placeholder="Escribe aquí tus apuntes, notas o tareas específicas durante este bloque Pomodoro..."></textarea>
+            </div>
+
+            <div class="explicacion-academica">
+              <h4>¿Cómo funciona y para qué sirve?</h4>
+              <p>La **Técnica Pomodoro** fragmenta el trabajo en intervalos de 25 minutos de concentración absoluta seguidos de 5 minutos de descanso. Evita el agotamiento mental, elimina distracciones y maximiza la productividad.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </div>
+  <footer>
+    <div class="footer-content">
+      <div class="social-icons">
+        <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2F%3Flocale%3Des_LA"><img src="facebook.png" alt="Facebook"></a>
+        <a href="https://x.com/?lang=es"><img src="twitter.png" alt="X"></a>
+        <a href="https://www.instagram.com/?hl=es"><img src="instagram.png" alt="Instagram"></a>
+      </div>
+      <p>&copy; 2026 SPARKY LEARN. Todos los derechos reservados. | <a href="#">Política de Privacidad</a> | <a href="#">Términos y Condiciones</a></p>
+    </div>
+  </footer>
+
+
+  <script src="tecnica.js"></script>
+</body>
+</html>
